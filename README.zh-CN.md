@@ -23,11 +23,14 @@ codex plugin add caoxicheng-skills@caoxicheng-skills
 安装后，新建一个任务并输入：
 
 ```text
-Use $git-commit to analyze my changes and create a focused commit.
+Use $find-open-source-solutions to recommend an open-source solution for my goal.
 ```
+
+该插件会连接只读 GitHub MCP 端点以实时发现仓库，并使用 Context7 检索仓库代码和官方文档。
 
 ## 包含的 Skills
 
+- `$find-open-source-solutions`：发现、验证、比较并推荐现有的开源 GitHub 仓库或多仓库解决方案组合。
 - `$git-commit`：分析 Git 改动、建议原子提交分组、生成 Conventional Commit 信息，并且仅使用 Git 创建提交。
 - `$hello-codex`：验证插件和自定义 Skill 是否正确安装。
 
@@ -42,9 +45,15 @@ Use $git-commit to analyze my changes and create a focused commit.
 ```text
 .
 ├── .agents/plugins/marketplace.json
+├── THIRD_PARTY_NOTICES.md
 └── plugins/caoxicheng-skills
+    ├── .mcp.json
     ├── .codex-plugin/plugin.json
     └── skills
+        ├── find-open-source-solutions
+        │   ├── SKILL.md
+        │   ├── agents/openai.yaml
+        │   └── references/context7.md
         ├── git-commit
         │   ├── SKILL.md
         │   └── agents/openai.yaml
@@ -67,4 +76,4 @@ plugins/caoxicheng-skills/skills/<skill-name>/SKILL.md
 
 ## 许可证
 
-[MIT](LICENSE)
+[MIT](LICENSE)。改编内容的许可信息请参阅 [Third-Party Notices](THIRD_PARTY_NOTICES.md)。

@@ -1,6 +1,6 @@
 {
   "name": "caoxicheng-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Reusable Codex skills published by caoxicheng.",
   "author": {
     "name": "caoxicheng",
@@ -9,16 +9,18 @@
   "homepage": "https://github.com/caoxicheng/codex-skills#readme",
   "repository": "https://github.com/caoxicheng/codex-skills",
   "license": "MIT",
-  "keywords": ["codex", "skills", "plugin"],
+  "keywords": ["codex", "skills", "plugin", "github", "open-source", "context7"],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Caoxicheng Skills",
     "shortDescription": "Reusable Codex workflows by caoxicheng.",
-    "longDescription": "Focused Codex workflows for safe Git commits and plugin diagnostics.",
+    "longDescription": "Focused Codex workflows for open-source discovery, safe Git commits, and plugin diagnostics.",
     "developerName": "caoxicheng",
     "category": "Developer Tools",
-    "capabilities": ["Write"],
+    "capabilities": ["Research", "Write"],
     "defaultPrompt": [
+      "Use $find-open-source-solutions to recommend an open-source solution for my goal.",
       "Use $git-commit to analyze my changes and create a focused commit.",
       "Use $hello-codex to verify that this plugin is installed correctly."
     ]
