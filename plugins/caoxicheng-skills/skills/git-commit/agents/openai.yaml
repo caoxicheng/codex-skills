@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit"
+  short_description: "Create safe Conventional Commit messages with Git only"
+  default_prompt: "Use $git-commit to analyze my Git changes and create a focused Conventional Commit."

@@ -23,7 +23,18 @@ Alternatively, restart the ChatGPT desktop app, open the Plugins Directory in Co
 After installation, start a new task and enter:
 
 ```text
-Use $hello-codex to verify the installation.
+Use $git-commit to analyze my changes and create a focused commit.
+```
+
+## Included skills
+
+- `$git-commit`: Analyze Git changes, suggest atomic groups, generate Conventional Commit messages, and create commits using Git only.
+- `$hello-codex`: Verify that the plugin and custom skills are installed correctly.
+
+`$git-commit` accepts the following optional arguments:
+
+```text
+--no-verify --all --amend --signoff --emoji --scope <scope> --type <type>
 ```
 
 ## Repository structure
@@ -33,9 +44,13 @@ Use $hello-codex to verify the installation.
 ├── .agents/plugins/marketplace.json
 └── plugins/caoxicheng-skills
     ├── .codex-plugin/plugin.json
-    └── skills/hello-codex
-        ├── SKILL.md
-        └── agents/openai.yaml
+    └── skills
+        ├── git-commit
+        │   ├── SKILL.md
+        │   └── agents/openai.yaml
+        └── hello-codex
+            ├── SKILL.md
+            └── agents/openai.yaml
 ```
 
 ## Adding a skill

@@ -23,7 +23,18 @@ codex plugin add caoxicheng-skills@caoxicheng-skills
 安装后，新建一个任务并输入：
 
 ```text
-Use $hello-codex to verify the installation.
+Use $git-commit to analyze my changes and create a focused commit.
+```
+
+## 包含的 Skills
+
+- `$git-commit`：分析 Git 改动、建议原子提交分组、生成 Conventional Commit 信息，并且仅使用 Git 创建提交。
+- `$hello-codex`：验证插件和自定义 Skill 是否正确安装。
+
+`$git-commit` 支持以下可选参数：
+
+```text
+--no-verify --all --amend --signoff --emoji --scope <scope> --type <type>
 ```
 
 ## 仓库结构
@@ -33,9 +44,13 @@ Use $hello-codex to verify the installation.
 ├── .agents/plugins/marketplace.json
 └── plugins/caoxicheng-skills
     ├── .codex-plugin/plugin.json
-    └── skills/hello-codex
-        ├── SKILL.md
-        └── agents/openai.yaml
+    └── skills
+        ├── git-commit
+        │   ├── SKILL.md
+        │   └── agents/openai.yaml
+        └── hello-codex
+            ├── SKILL.md
+            └── agents/openai.yaml
 ```
 
 ## 添加 Skill

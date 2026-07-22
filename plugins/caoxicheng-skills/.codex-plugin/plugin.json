@@ -1,6 +1,6 @@
 {
   "name": "caoxicheng-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reusable Codex skills published by caoxicheng.",
   "author": {
     "name": "caoxicheng",
@@ -14,11 +14,12 @@
   "interface": {
     "displayName": "Caoxicheng Skills",
     "shortDescription": "Reusable Codex workflows by caoxicheng.",
-    "longDescription": "A growing collection of focused, reusable workflows for Codex.",
+    "longDescription": "Focused Codex workflows for safe Git commits and plugin diagnostics.",
     "developerName": "caoxicheng",
     "category": "Developer Tools",
-    "capabilities": [],
+    "capabilities": ["Write"],
     "defaultPrompt": [
+      "Use $git-commit to analyze my changes and create a focused commit.",
       "Use $hello-codex to verify that this plugin is installed correctly."
     ]
   }
