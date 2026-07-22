@@ -1,4 +1,4 @@
 interface:
   display_name: "Hello Codex"
-  short_description: "验证自定义 Codex Skill 是否已正确安装并成功触发"
+  short_description: "Verify custom Codex skill installation and invocation"
   default_prompt: "Use $hello-codex to verify that this custom skill is installed correctly."
