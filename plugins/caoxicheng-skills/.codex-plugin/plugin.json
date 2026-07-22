@@ -1,0 +1,25 @@
+{
+  "name": "caoxicheng-skills",
+  "version": "0.1.0",
+  "description": "Reusable Codex skills published by caoxicheng.",
+  "author": {
+    "name": "caoxicheng",
+    "url": "https://github.com/caoxicheng"
+  },
+  "homepage": "https://github.com/caoxicheng/codex-skills#readme",
+  "repository": "https://github.com/caoxicheng/codex-skills",
+  "license": "MIT",
+  "keywords": ["codex", "skills", "plugin"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Caoxicheng Skills",
+    "shortDescription": "Reusable Codex workflows by caoxicheng.",
+    "longDescription": "A growing collection of focused, reusable workflows for Codex.",
+    "developerName": "caoxicheng",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $hello-codex to verify that this plugin is installed correctly."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "caoxicheng-skills",
+  "interface": {
+    "displayName": "Caoxicheng Skills"
+  },
+  "plugins": [
+    {
+      "name": "caoxicheng-skills",
+      "source": {
+        "source": "local",
+        "path": "./plugins/caoxicheng-skills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
